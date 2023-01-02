@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Markazi+Text:wght@400;700&display=swap');
+
+
+:root {
+  --primary-dark: #495e57;
+  --primary-light: #f4ce15;
+  --secondary-one: #ee9972;
+  --secondary-two: #fbdabb;
+  --secondary-three: #edefee;
+  --secondary-four: #333333;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  width: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Markazi Text', serif;
+  letter-spacing: 2px;;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-four);
+  margin:1rem 0;
+}
+
+p, ul{
+  font-size: 1.25rem;;
+}
+
+a {
+  color: var(--secondary-three);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: var(--primary-dark);
+  height: 350px;
+  margin-bottom: 4rem;
+}
+
+header h1 {
+  color: var(--primary-light);
+  margin: 0;
+  font-size: 2.5rem
+}
+
+header h2 {
+  font-size: 1.54rem;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+header h2,
+header p {
+  margin: 0;
+  color: white;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: 400px;
+  border-radius: 1.2rem;
+  box-shadow: 10px 10px 10px 1px var(--secondary-four);
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+header .container > * {
+  width: 400px;
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0 2rem;
+}
+
+nav .brand {
+  height: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-inline-start: 0rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+nav ul a {
+  color: var(--secondary-four);
+  text-decoration: none;
+}
+
+nav ul a:active {
+  text-decoration: underline;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
+
+
+main  {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem;
+  display: flex;
+}
+
+.container {
+  display:flex;
+  margin: 0 auto;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specials {
+  display: flex;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  border: 1px solid var(--primary-light);
+  background-color: var(--primary-light);;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 1.25rem;
+  display: block;
+  color: var(--secondary-four);
+  line-height: 25px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background: var(--secondary-one);
+  border: 1px solid var(--secondary-one);
+  color: var(--secondary-four );
+  text-decoration: none;
+}
+
+
+footer {
+  background-color: var(--secondary-three);
+  padding: 1rem;
+  display: flex;
+  gap: 2rem 1rem;
+}
+
+footer img {
+  max-width: 50%;
+}
+
+footer p {
+  border-top: var(--secondary-four);
+  border-style: solid;
+  border-width: 0.1rem;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  text-align: right;
+  padding-top: 1rem;;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input, select{
+  width: 80%;
+  display: block;
+  padding: .5rem 1rem;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  padding: 0.3rem 0;
+}
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  nav > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+
+  .row {
+      flex-direction: column;
+      width: 100%;
+    }
+
+  input{
+      width: 100%;
+  }
+
+  .btn{
+      width: 100%;
+  }
+}
